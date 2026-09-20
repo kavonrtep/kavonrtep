@@ -94,7 +94,7 @@ Containerised Snakemake workflows used in the lab.
 | Repo | What it is | |
 |---|---|---|
 | [hermit](https://github.com/kavonrtep/hermit) | Sandboxed AI data analyst for bioinformatics — Claude Code / Codex / Copilot CLI inside Apptainer with read-only data | ![Shell][sh] ![Apptainer][apptainer] |
-| [candat](https://github.com/kavonrtep/candat) | Terminal text editor with emacs keybindings, built on Textual | ![Python][py] |
+| [candat](https://github.com/kavonrtep/candat) | Terminal text editor with emacs keybindings, built on Textual | ![Python][py] [![PyPI](https://img.shields.io/pypi/v/candat?label=PyPI&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/candat/) |
 
 ## Recent activity
 
