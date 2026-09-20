@@ -99,4 +99,5 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+1. 🔒 Closed issue [#5](https://github.com/kavonrtep/galaxy_packages/issues/5) in [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 <!--END_SECTION:activity-->
