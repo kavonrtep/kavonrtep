@@ -9,6 +9,12 @@
 [docker]: https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white
 [apptainer]: https://img.shields.io/badge/Apptainer-1D3E6B?logo=linuxcontainers&logoColor=white
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
+  <img src="assets/banner-light.svg" width="100%"
+       alt="Genome annotation tracks: a repeat-density profile above tracks of LTR retrotransposons, TIR DNA transposons and satellite repeat arrays, with a satellite-rich centromeric region in the middle">
+</picture>
+
 # Petr Novák
 
 Bioinformatician at the [Laboratory of Molecular Cytogenetics](http://w3lamc.umbr.cas.cz/lamc/), [Biology Centre CAS](https://www.umbr.cas.cz/en/), České Budějovice.
