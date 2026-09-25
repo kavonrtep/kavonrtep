@@ -16,11 +16,20 @@ Run:  python3 assets/make_banner.py
 """
 import math
 
-W, H = 1280, 320
-L, R = 56, 1224                      # left / right content margin
-DENS_BASE = 104                               # baseline of the density profile
-ROWS = {"ltr": 148, "tir": 202, "sat": 256}   # row centre lines
-RULER = 292
+W = 1280
+L, R = 56, 1224               # left / right content margin
+VS = 0.70                     # vertical scale: 1.0 = the original 320 px banner
+BASE_H = 320
+H = round(BASE_H * VS)
+
+def vscale(value):
+    """Scale a vertical measure by VS."""
+    return value * VS
+
+DENS_BASE = vscale(104)                                    # baseline of the density profile
+ROWS = {"ltr": vscale(148), "tir": vscale(202), "sat": vscale(256)}  # row centre lines
+RULER = vscale(292)
+GRID_TOP = vscale(34)
 
 LIGHT = dict(
     name="light",
@@ -52,6 +61,16 @@ def arrow(x, y, w, h, direction, fill, op=1.0):
     o = f' opacity="{op}"' if op != 1.0 else ""
     return f'<polygon points="{pts}" fill="{fill}"{o}/>'
 
+def head(x, y, w, h, direction, fill):
+    """Terminal-repeat arrowhead: a solid triangle, so direct repeats (both
+    heads the same way) and inverted repeats (heads facing each other) are
+    readable at a glance."""
+    if direction > 0:
+        pts = f"{x},{y} {x+w},{y+h/2} {x},{y+h}"
+    else:
+        pts = f"{x+w},{y} {x},{y+h/2} {x+w},{y+h}"
+    return f'<polygon points="{pts}" fill="{fill}"/>'
+
 def rect(x, y, w, h, fill, rx=2, op=1.0):
     o = f' opacity="{op}"' if op != 1.0 else ""
     return f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx}" fill="{fill}"{o}/>'
@@ -69,16 +88,16 @@ def ltr_element(x, w, strand, cy, p, kind="full"):
     The element is composed left-to-right and mirrored as a whole for the
     reverse strand, so a truncated element always breaks at its open end.
     """
-    h = 30
+    h = vscale(30)
     y = cy - h / 2
     if kind == "solo":
-        return arrow(x, y, max(13, w), h, strand, p["ltr_arrow"])
+        return head(x, y, max(14, w), h, strand, p["ltr_arrow"])
 
-    ltr_w = max(13, w * 0.14)
+    ltr_w = max(14, min(26, w * 0.15))
     shapes = []          # (kind, x, width, ...) in left-to-right orientation
     inner_x = x + ltr_w + 5
     inner_w = (w - 2 * ltr_w - 10) if kind == "full" else (w - ltr_w - 9)
-    shapes.append(("rect", inner_x - 2, inner_w + 4, cy - h * 0.15, h * 0.30, p["ltr_body"], 1.0))
+    shapes.append(("rect", inner_x - 2, inner_w + 4, cy - h * 0.16, h * 0.32, p["ltr_body"], 1.0))
     prop, gap = [0.17, 0.10, 0.30, 0.13, 0.21], 5
     span = inner_w - gap * (len(prop) - 1)
     dx, dh, end = inner_x, h * 0.60, inner_x + inner_w
@@ -91,9 +110,9 @@ def ltr_element(x, w, strand, cy, p, kind="full"):
             dw, fade = end - dx, 0.45
         shapes.append(("rect", dx, dw, cy - dh / 2, dh, p["ltr_dom"], fade))
         dx += dw + gap
-    shapes.append(("arrow", x, ltr_w, y, h, p["ltr_arrow"], 1.0))
+    shapes.append(("head", x, ltr_w, y, h, p["ltr_arrow"], 1.0))
     if kind == "full":
-        shapes.append(("arrow", x + w - ltr_w, ltr_w, y, h, p["ltr_arrow"], 1.0))
+        shapes.append(("head", x + w - ltr_w, ltr_w, y, h, p["ltr_arrow"], 1.0))
 
     out = []
     for kind_, sx, sw, sy, sh, fill, op in shapes:
@@ -102,30 +121,30 @@ def ltr_element(x, w, strand, cy, p, kind="full"):
         if kind_ == "rect":
             out.append(rect(sx, sy, sw, sh, fill, rx=2, op=op))
         else:
-            out.append(arrow(sx, sy, sw, sh, strand, fill))
+            out.append(head(sx, sy, sw, sh, strand, fill))
     return "".join(out)
 
 def tir_element(x, w, cy, p):
     """DNA transposon: terminal repeats pointing INWARD (inverted repeats)
     around a slim body carrying the transposase block."""
-    h = 26
+    h = vscale(26)
     y = cy - h / 2
-    tir_w = max(12, w * 0.17)
+    tir_w = max(12, min(22, w * 0.18))
     out = []
     body_x, body_w = x + tir_w, w - 2 * tir_w
     if body_w > 6:
-        out.append(rect(body_x - 2, cy - h * 0.14, body_w + 4, h * 0.28, p["tir_body"], rx=2))
+        out.append(rect(body_x - 2, cy - h * 0.15, body_w + 4, h * 0.30, p["tir_body"], rx=2))
         # transposase ORF in the middle of the element
         tp_w = body_w * 0.66
         out.append(rect(body_x + (body_w - tp_w) / 2, cy - h * 0.29, tp_w, h * 0.58,
                         p["tir"], rx=2))
-    out.append(arrow(x, y, tir_w, h, +1, p["tir_arrow"]))
-    out.append(arrow(x + w - tir_w, y, tir_w, h, -1, p["tir_arrow"]))
+    out.append(head(x, y, tir_w, h, +1, p["tir_arrow"]))
+    out.append(head(x + w - tir_w, y, tir_w, h, -1, p["tir_arrow"]))
     return "".join(out)
 
 def sat_array(x, mono_w, n, cy, p, hor=None, tall=1.0):
     """Tandem array of identical monomers. hor=k marks a k-monomer higher-order unit."""
-    h = 24 * tall
+    h = vscale(24) * tall
     y = cy - h / 2
     gap = 1.6
     out = [rect(x - 2, cy - h * 0.62, n * (mono_w + gap) + 2, h * 1.24, p["sat_body"], rx=3, op=0.55)]
@@ -176,13 +195,13 @@ def density_path():
             v += a * math.exp(-((x - cx) ** 2) / (2 * sd * sd))
         v += 0.035 * math.sin(x / 29.0) + 0.025 * math.sin(x / 11.0 + 1.4)
         vals.append(min(1.0, v))
-    amp = 74.0
-    d = f"M {L:.1f},{DENS_BASE}"
+    amp = vscale(74)
+    d = f"M {L:.1f},{DENS_BASE:.1f}"
     for i, v in enumerate(vals):
         px = L + (R - L) * i / (n - 1)
         d += f" L {px:.1f},{DENS_BASE - (0.04 + 0.96 * v) * amp:.1f}"
     line = d
-    d += f" L {R:.1f},{DENS_BASE} Z"
+    d += f" L {R:.1f},{DENS_BASE:.1f} Z"
     return d, line
 
 def build(p):
@@ -201,17 +220,17 @@ def build(p):
     s.append(f'<rect width="{W}" height="{H}" fill="{p["bg"]}"/>')
     s.append(f'<rect width="{W}" height="{H}" fill="url(#bg)"/>')
     for gx in range(L, R + 1, 56):
-        s.append(f'<line x1="{gx}" y1="34" x2="{gx}" y2="{RULER}" stroke="{p["grid"]}" stroke-width="1"/>')
+        s.append(f'<line x1="{gx}" y1="{GRID_TOP:.1f}" x2="{gx}" y2="{RULER:.1f}" stroke="{p["grid"]}" stroke-width="1"/>')
     # density profile, with its own baseline
     dp, dline = density_path()
     s.append(f'<path d="{dp}" fill="url(#dens)"/>')
     s.append(f'<path d="{dline}" fill="none" stroke="{p["dens_sat"]}" stroke-width="1.6" '
              f'stroke-linejoin="round" opacity="0.55"/>')
-    s.append(f'<line x1="{L}" y1="{DENS_BASE}" x2="{R}" y2="{DENS_BASE}" stroke="{p["axis"]}" '
+    s.append(f'<line x1="{L}" y1="{DENS_BASE:.1f}" x2="{R}" y2="{DENS_BASE:.1f}" stroke="{p["axis"]}" '
              f'stroke-width="1.1" opacity="0.45"/>')
     # per-row sequence baselines
     for cy in ROWS.values():
-        s.append(f'<line x1="{L}" y1="{cy}" x2="{R}" y2="{cy}" stroke="{p["axis"]}" '
+        s.append(f'<line x1="{L}" y1="{cy:.1f}" x2="{R}" y2="{cy:.1f}" stroke="{p["axis"]}" '
                  f'stroke-width="1.4" opacity="0.5"/>')
     cy = ROWS["ltr"]
     for x, w, strand, kind in LTRS:
@@ -223,11 +242,11 @@ def build(p):
     for x, mw, cnt, hor, tall in SATS:
         s.append(sat_array(x, mw, cnt, cy, p, hor=hor, tall=tall))
     # coordinate ruler
-    s.append(f'<line x1="{L}" y1="{RULER}" x2="{R}" y2="{RULER}" stroke="{p["axis"]}" stroke-width="1.2"/>')
+    s.append(f'<line x1="{L}" y1="{RULER:.1f}" x2="{R}" y2="{RULER:.1f}" stroke="{p["axis"]}" stroke-width="1.2"/>')
     for i in range(0, 22):
         tx = L + (R - L) * i / 21
         long = (i % 5 == 0)
-        s.append(f'<line x1="{tx:.1f}" y1="{RULER}" x2="{tx:.1f}" y2="{RULER + (8 if long else 4)}" '
+        s.append(f'<line x1="{tx:.1f}" y1="{RULER:.1f}" x2="{tx:.1f}" y2="{RULER + vscale(8 if long else 4):.1f}" '
                  f'stroke="{p["axis"] if long else p["tick"]}" stroke-width="1.2"/>')
     s.append('</svg>')
     return "\n".join(s)
