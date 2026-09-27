@@ -33,14 +33,18 @@ for e in events:
             lines[key] = {"n": n, "msg": msg, "repo": repo, "url": url, "day": day}
     elif t == "ReleaseEvent" and p.get("action") == "published":
         r = p["release"]
-        lines[("rel", repo, r["tag_name"])] = {"text": f"🏷️ Released [{r['tag_name']}]({r['html_url']}) of [{repo}]({url})", "day": day}
+        rurl = r.get("html_url") or f"{url}/releases/tag/{r['tag_name']}"
+        lines[("rel", repo, r["tag_name"])] = {"text": f"🏷️ Released [{r['tag_name']}]({rurl}) of [{repo}]({url})", "day": day}
     elif t == "IssuesEvent":
         i = p["issue"]
-        lines[("iss", i["html_url"], p["action"])] = {"text": f"🐛 {p['action'].capitalize()} issue [#{i['number']}]({i['html_url']}) in [{repo}]({url})", "day": day}
+        iurl = i.get("html_url") or f"{url}/issues/{i['number']}"
+        lines[("iss", iurl, p["action"])] = {"text": f"🐛 {p['action'].capitalize()} issue [#{i['number']}]({iurl}) in [{repo}]({url})", "day": day}
     elif t == "PullRequestEvent":
         pr = p["pull_request"]
         act = "merged" if p["action"] == "closed" and pr.get("merged") else p["action"]
-        lines[("pr", pr["html_url"], act)] = {"text": f"🔀 {act.capitalize()} PR [#{pr['number']}]({pr['html_url']}) in [{repo}]({url})", "day": day}
+        # the events API now sends a slimmed pull_request object without html_url
+        prurl = pr.get("html_url") or f"{url}/pull/{pr['number']}"
+        lines[("pr", prurl, act)] = {"text": f"🔀 {act.capitalize()} PR [#{pr['number']}]({prurl}) in [{repo}]({url})", "day": day}
     elif t == "CreateEvent" and p.get("ref_type") == "repository":
         lines[("new", repo)] = {"text": f"✨ Created repository [{repo}]({url})", "day": day}
 
