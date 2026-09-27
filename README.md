@@ -105,12 +105,12 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-09-26 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
+- 2026-09-26 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
+- 2026-09-25 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
+- 2026-09-25 · ⬆️ Pushed to [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
+- 2026-09-25 · 🔀 Merged PR [#9](https://github.com/repeatexplorer/repeatexplorer.github.io/pull/9) in [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
+- 2026-09-25 · 🔀 Opened PR [#9](https://github.com/repeatexplorer/repeatexplorer.github.io/pull/9) in [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
+- 2026-09-25 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-09-24 · ⬆️ Pushed to [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
-- 2026-09-23 · ⬆️ Pushed to [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
-- 2026-09-18 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
-- 2026-09-18 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
-- 2026-09-18 · ⬆️ Pushed to [kavonrtep/syntrack](https://github.com/kavonrtep/syntrack)
-- 2026-09-17 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
-- 2026-09-17 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
-- 2026-09-16 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
 <!--END_SECTION:activity-->
