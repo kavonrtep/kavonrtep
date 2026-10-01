@@ -105,6 +105,7 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-01 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/training-material](https://github.com/kavonrtep/training-material)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-09-30 · ⬆️ Pushed to [kavonrtep/training-material](https://github.com/kavonrtep/training-material)
@@ -112,5 +113,4 @@ Containerised Snakemake workflows used in the lab.
 - 2026-09-26 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
 - 2026-09-26 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-09-25 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
-- 2026-09-25 · ⬆️ Pushed to [repeatexplorer/repeatexplorer.github.io](https://github.com/repeatexplorer/repeatexplorer.github.io)
 <!--END_SECTION:activity-->
