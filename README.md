@@ -105,12 +105,12 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-02 · 🐛 Closed issue [#14](https://github.com/kavonrtep/dante_ltr/issues/14) in [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
+- 2026-10-02 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
+- 2026-10-02 · 🐛 Opened issue [#14](https://github.com/kavonrtep/dante_ltr/issues/14) in [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
 - 2026-10-02 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-01 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/syntrack](https://github.com/kavonrtep/syntrack)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/training-material](https://github.com/kavonrtep/training-material)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
-- 2026-09-30 · ⬆️ Pushed to [kavonrtep/training-material](https://github.com/kavonrtep/training-material)
-- 2026-09-28 · 🐛 Opened issue [#1](https://github.com/kavonrtep/bioinformatics/issues/1) in [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
-- 2026-09-26 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
 <!--END_SECTION:activity-->
