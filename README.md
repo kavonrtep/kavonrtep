@@ -102,6 +102,13 @@ Containerised Snakemake workflows used in the lab.
 | [hermit](https://github.com/kavonrtep/hermit) | Sandboxed AI data analyst for bioinformatics — Claude Code / Codex / Copilot CLI inside Apptainer with read-only data | ![Shell][sh] ![Apptainer][apptainer] |
 | [candat](https://github.com/kavonrtep/candat) | Terminal text editor with emacs keybindings, built on Textual | ![Python][py] [![PyPI](https://img.shields.io/pypi/v/candat?label=PyPI&color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/candat/) |
 
+## Organizations
+
+| Organization | What it is |
+|---|---|
+| [**repeatexplorer**](https://github.com/repeatexplorer) | RepeatExplorer project — documentation site, Galaxy tool definitions, REXdb and workshop materials |
+| [**PeaTerPan**](https://github.com/PeaTerPan-Pan-Genome-Project) | PeaTerPan pan-genome project — assembly QC (asmqc) |
+
 ## Recent activity
 
 <!--START_SECTION:activity-->
