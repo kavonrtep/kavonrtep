@@ -112,10 +112,10 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-02 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-02 · 🐛 Closed issue [#14](https://github.com/kavonrtep/dante_ltr/issues/14) in [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
 - 2026-10-02 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
 - 2026-10-02 · 🐛 Opened issue [#14](https://github.com/kavonrtep/dante_ltr/issues/14) in [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
-- 2026-10-02 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-01 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/syntrack](https://github.com/kavonrtep/syntrack)
 - 2026-10-01 · ⬆️ Pushed to [kavonrtep/training-material](https://github.com/kavonrtep/training-material)
