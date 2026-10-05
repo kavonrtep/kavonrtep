@@ -112,12 +112,12 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-05 · 🐛 Closed issue [#1](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc/issues/1) in [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
+- 2026-10-05 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 - 2026-10-04 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-04 · ⬆️ Pushed to [kavonrtep/dante_tir](https://github.com/kavonrtep/dante_tir)
 - 2026-10-04 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
 - 2026-10-04 · 🐛 Opened issue [#3](https://github.com/kavonrtep/dante_tir/issues/3) in [kavonrtep/dante_tir](https://github.com/kavonrtep/dante_tir)
 - 2026-10-04 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
-- 2026-10-02 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
-- 2026-10-02 · 🐛 Closed issue [#14](https://github.com/kavonrtep/dante_ltr/issues/14) in [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
-- 2026-10-02 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
+- 2026-10-04 · ⬆️ Pushed to [PeaTerPan-Pan-Genome-Project/asmqc](https://github.com/PeaTerPan-Pan-Genome-Project/asmqc)
 <!--END_SECTION:activity-->
