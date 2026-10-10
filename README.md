@@ -112,6 +112,7 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-10 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-10-09 · ⬆️ Pushed to [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-09 · 🔀 Merged PR [#10](https://github.com/kavonrtep/TideCluster/pull/10) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-09 · 🔀 Opened PR [#10](https://github.com/kavonrtep/TideCluster/pull/10) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
@@ -119,5 +120,4 @@ Containerised Snakemake workflows used in the lab.
 - 2026-10-07 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-07 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-10-07 · ⬆️ Pushed to [kavonrtep/syntrack](https://github.com/kavonrtep/syntrack)
-- 2026-10-07 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 <!--END_SECTION:activity-->
