@@ -112,6 +112,7 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-17 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-16 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-15 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-15 · 🐛 Closed issue [#6](https://github.com/kavonrtep/galaxy_packages/issues/6) in [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
@@ -119,5 +120,4 @@ Containerised Snakemake workflows used in the lab.
 - 2026-10-15 · ⬆️ Pushed to [kavonrtep/usegalaxy](https://github.com/kavonrtep/usegalaxy)
 - 2026-10-12 · 🐛 Closed issue [#2](https://github.com/kavonrtep/busco2aster/issues/2) in [kavonrtep/busco2aster](https://github.com/kavonrtep/busco2aster)
 - 2026-10-12 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
-- 2026-10-11 · 🐛 Closed issue [#5](https://github.com/kavonrtep/CARP/issues/5) in [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 <!--END_SECTION:activity-->
