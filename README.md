@@ -112,12 +112,12 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-25 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
+- 2026-10-25 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
 - 2026-10-23 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-22 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-21 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-20 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-20 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 - 2026-10-20 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
-- 2026-10-19 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
-- 2026-10-19 · ⬆️ Pushed to [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 <!--END_SECTION:activity-->
