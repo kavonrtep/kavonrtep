@@ -112,6 +112,7 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-10-26 · ⬆️ Pushed to [w3lamc/w3lamc.github.io](https://github.com/w3lamc/w3lamc.github.io)
 - 2026-10-26 · 🐛 Closed issue [#7](https://github.com/kavonrtep/TideCluster/issues/7) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#8](https://github.com/kavonrtep/TideCluster/issues/8) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#9](https://github.com/kavonrtep/TideCluster/issues/9) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
@@ -119,5 +120,4 @@ Containerised Snakemake workflows used in the lab.
 - 2026-10-26 · ⬆️ Pushed to [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#6](https://github.com/kavonrtep/CARP/issues/6) in [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 - 2026-10-25 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
-- 2026-10-25 · ⬆️ Pushed to [kavonrtep/games](https://github.com/kavonrtep/games)
 <!--END_SECTION:activity-->
