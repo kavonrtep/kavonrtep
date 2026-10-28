@@ -113,11 +113,11 @@ Containerised Snakemake workflows used in the lab.
 
 <!--START_SECTION:activity-->
 - 2026-10-27 · 🐛 Closed issue [#8](https://github.com/kavonrtep/galaxy_packages/issues/8) in [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
+- 2026-10-27 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-10-26 · ⬆️ Pushed to [w3lamc/w3lamc.github.io](https://github.com/w3lamc/w3lamc.github.io)
+- 2026-10-26 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 - 2026-10-26 · 🐛 Closed issue [#7](https://github.com/kavonrtep/TideCluster/issues/7) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#8](https://github.com/kavonrtep/TideCluster/issues/8) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#9](https://github.com/kavonrtep/TideCluster/issues/9) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
 - 2026-10-26 · 🐛 Closed issue [#12](https://github.com/kavonrtep/TideCluster/issues/12) in [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
-- 2026-10-26 · ⬆️ Pushed to [kavonrtep/TideCluster](https://github.com/kavonrtep/TideCluster)
-- 2026-10-26 · 🐛 Closed issue [#6](https://github.com/kavonrtep/CARP/issues/6) in [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 <!--END_SECTION:activity-->
