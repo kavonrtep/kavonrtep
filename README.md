@@ -115,9 +115,9 @@ Containerised Snakemake workflows used in the lab.
 - 2026-10-30 · 🔀 Merged PR [#1](https://github.com/kavonrtep/dottir/pull/1) in [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
 - 2026-10-30 · 🔀 Assigned PR [#1](https://github.com/kavonrtep/dottir/pull/1) in [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
 - 2026-10-30 · 🔀 Opened PR [#1](https://github.com/kavonrtep/dottir/pull/1) in [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
+- 2026-10-29 · ⬆️ Pushed to [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
 - 2026-10-28 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 - 2026-10-28 · ⬆️ Pushed to [kavonrtep/dante_ltr](https://github.com/kavonrtep/dante_ltr)
 - 2026-10-27 · 🐛 Closed issue [#8](https://github.com/kavonrtep/galaxy_packages/issues/8) in [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
 - 2026-10-27 · ⬆️ Pushed to [kavonrtep/galaxy_packages](https://github.com/kavonrtep/galaxy_packages)
-- 2026-10-26 · ⬆️ Pushed to [w3lamc/w3lamc.github.io](https://github.com/w3lamc/w3lamc.github.io)
 <!--END_SECTION:activity-->
