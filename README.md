@@ -112,6 +112,7 @@ Containerised Snakemake workflows used in the lab.
 ## Recent activity
 
 <!--START_SECTION:activity-->
+- 2026-11-05 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-11-01 · ⬆️ Pushed to [kavonrtep/bioinformatics](https://github.com/kavonrtep/bioinformatics)
 - 2026-10-30 · ⬆️ Pushed to [kavonrtep/candat](https://github.com/kavonrtep/candat)
 - 2026-10-30 · ⬆️ Pushed to [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
@@ -119,5 +120,4 @@ Containerised Snakemake workflows used in the lab.
 - 2026-10-30 · 🔀 Assigned PR [#1](https://github.com/kavonrtep/dottir/pull/1) in [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
 - 2026-10-30 · 🔀 Opened PR [#1](https://github.com/kavonrtep/dottir/pull/1) in [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
 - 2026-10-29 · ⬆️ Pushed to [kavonrtep/dottir](https://github.com/kavonrtep/dottir)
-- 2026-10-28 · ⬆️ Pushed to [kavonrtep/CARP](https://github.com/kavonrtep/CARP)
 <!--END_SECTION:activity-->
